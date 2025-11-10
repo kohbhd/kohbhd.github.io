@@ -28,23 +28,23 @@ body {
 }
 
 a {
-    color: var(--color-primary); /* Sets link color to Iridescent Green */
-    text-decoration: none;      /* Removes the default underline */
-    font-weight: bold;          /* Makes the link text bolder */
-    transition: color 0.3s;     /* Smooth transition for hover effect */
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 a:hover {
-    color: #8C8A79; /* A slightly subdued color, like Chestnut Brown, on hover */
-    text-decoration: underline; /* Adds an underline back on hover for clarity */
+    color: #8C8A79;
+    text-decoration: underline;
 }
 
-/* --- Header & Navigation --- */
+/* --- Header & Navigation (Desktop) --- */
 header {
     background: var(--color-text);
     color: var(--color-light-accent);
     padding: 1rem 0;
-    border-bottom: 5px solid var(--color-primary); /* Green 'head' stripe */
+    border-bottom: 5px solid var(--color-primary);
 }
 
 header h1 {
@@ -60,7 +60,7 @@ header .container {
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex; /* Horizontal on desktop */
 }
 
 nav ul li a {
@@ -87,10 +87,10 @@ main {
     margin-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid var(--color-secondary); /* Chestnut accent */
+    border-left: 5px solid var(--color-secondary);
 }
 
-/* --- Hero Section --- */
+/* --- Hero Section (Desktop) --- */
 #hero {
     display: flex;
     justify-content: space-between;
@@ -99,7 +99,7 @@ main {
 }
 
 .hero-content {
-    max-width: 60%;
+    max-width: 60%; /* Desktop width */
 }
 
 #hero h2 {
@@ -116,9 +116,9 @@ main {
 .profile-image {
     width: 150px;
     height: 150px;
-    background: var(--color-secondary); /* Duck brown placeholder */
+    background: var(--color-secondary);
     border-radius: 50%;
-    border: 5px solid var(--color-primary); /* Iridescent green border */
+    border: 5px solid var(--color-primary);
     flex-shrink: 0;
     margin-left: 2rem;
 }
@@ -139,8 +139,8 @@ main {
     color: var(--color-light-accent);
 }
 
-/* --- Services Section --- */
-#services h3 {
+/* --- Services & About Section (Desktop) --- */
+#services h3, #about h3 {
     text-align: center;
     color: var(--color-text);
     margin-bottom: 1.5rem;
@@ -148,7 +148,7 @@ main {
 }
 
 .service-details {
-    display: flex;
+    display: flex; /* Horizontal on desktop */
     gap: 2rem;
 }
 
@@ -175,4 +175,82 @@ footer {
     padding: 1rem 0;
     font-size: 0.9rem;
     margin-top: auto;
+}
+
+/* ========================================================== */
+/* MEDIA QUERIES FOR MOBILE                   */
+/* ========================================================== */
+
+/* --- Tablet and Smaller Screens (Max width 768px) --- */
+@media (max-width: 768px) {
+    /* Adjust Hero Layout */
+    #hero {
+        flex-direction: column-reverse; /* Put text above image on mobile */
+        text-align: center;
+        min-height: auto;
+    }
+
+    .hero-content {
+        max-width: 100%; /* Use full width */
+        margin-top: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        margin: 0 auto; /* Center image */
+    }
+
+    /* Stack Service Blocks */
+    .service-details {
+        flex-direction: column; /* Stacks the two columns */
+        gap: 1.5rem;
+    }
+
+    .card {
+        padding: 1.5rem; /* Slightly reduced padding */
+    }
+}
+
+/* --- Small Mobile Phones (Max width 600px) --- */
+@media (max-width: 600px) {
+    /* Header & Navigation Adjustments */
+    header .container {
+        flex-direction: column; /* Stack logo/title and nav */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        margin-top: 0.5rem;
+    }
+
+    nav ul li a {
+        padding: 0.25rem 0; /* Less vertical padding for nav items */
+    }
+
+    nav ul li a:hover {
+        background: transparent; /* Remove background change on hover for stacked links */
+        color: var(--color-primary);
+    }
+
+    /* General Styling */
+    .container {
+        padding: 0 10px; /* Less horizontal padding */
+    }
+
+    #hero h2 {
+        font-size: 1.75rem; /* Smaller hero heading */
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
 }
