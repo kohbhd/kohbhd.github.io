@@ -1,0 +1,178 @@
+/* --- Wild Duck Color Palette --- */
+:root {
+    --color-primary: #14532D; /* Iridescent Green */
+    --color-secondary: #6B4226; /* Chestnut Brown */
+    --color-background: #F3F0E6; /* Creamy White/Tan */
+    --color-text: #1A1A1A; /* Near Black */
+    --color-light-accent: #FFFFFF; /* Pure White */
+}
+
+/* --- Base Styling --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--color-primary); /* Sets link color to Iridescent Green */
+    text-decoration: none;      /* Removes the default underline */
+    font-weight: bold;          /* Makes the link text bolder */
+    transition: color 0.3s;     /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #8C8A79; /* A slightly subdued color, like Chestnut Brown, on hover */
+    text-decoration: underline; /* Adds an underline back on hover for clarity */
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: var(--color-text);
+    color: var(--color-light-accent);
+    padding: 1rem 0;
+    border-bottom: 5px solid var(--color-primary); /* Green 'head' stripe */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--color-light-accent);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--color-light-accent);
+    padding: 0.5rem 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary);
+    background: var(--color-secondary);
+}
+
+/* --- Main Content Cards --- */
+main {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.card {
+    background: var(--color-light-accent);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--color-secondary); /* Chestnut accent */
+}
+
+/* --- Hero Section --- */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 300px;
+}
+
+.hero-content {
+    max-width: 60%;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+#hero p {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    background: var(--color-secondary); /* Duck brown placeholder */
+    border-radius: 50%;
+    border: 5px solid var(--color-primary); /* Iridescent green border */
+    flex-shrink: 0;
+    margin-left: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-light-accent);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background: var(--color-secondary);
+    color: var(--color-light-accent);
+}
+
+/* --- Services Section --- */
+#services h3 {
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.service-details {
+    display: flex;
+    gap: 2rem;
+}
+
+.service-block {
+    flex: 1;
+    padding: 1.5rem;
+    background: var(--color-background);
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.service-block h4 {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5rem;
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--color-text);
+    color: var(--color-light-accent);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
