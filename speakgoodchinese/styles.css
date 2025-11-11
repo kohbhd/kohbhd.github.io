@@ -1,0 +1,101 @@
+/* Custom styles for the serene garden feel */
+body {
+    /*
+     * NOTE: font-family is redundant because it's set by Tailwind config.
+     * The background-color is also set by the body class in HTML, 
+     * but included here for completeness/override clarity.
+     */
+    font-family: 'Inter', sans-serif;
+    background-color: #F8FAF5; /* garden-light */
+}
+
+/* Base styles for section cards */
+.section-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Base styles for scroll-to-top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    /* 確保在所有設備上都足夠大，方便點擊 */
+    width: 3rem; 
+    height: 3rem;
+    z-index: 50; /* 確保它在最上層 */
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+}
+
+
+/* ========================================================= */
+/* MOBILE OPTIMIZATIONS (Max-width: 767px, equivalent to Tailwind 'sm') */
+/* ========================================================= */
+
+@media (max-width: 767px) {
+    /* 1. HEADER & NAVIGATION */
+    
+    /* 調整 header 內的元素佈局為垂直堆疊，並將導航居中 */
+    header .flex {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* 確保導航鏈接在小螢幕上有足夠的空間，並堆疊或緊湊排列 */
+    header nav {
+        display: flex; /* 使用 flex 佈局 */
+        justify-content: center; /* 鏈接居中 */
+        flex-wrap: wrap; /* 允許鏈接換行 */
+        margin-top: 0.5rem; /* 與標題隔開 */
+    }
+
+    /* 調整導航鏈接之間的間距，讓它們在小螢幕上不會太擠 */
+    header nav a {
+        padding: 0.5rem 0.5rem; /* 增加點擊區域 */
+        margin: 0 0.25rem; /* 左右間距 */
+        font-size: 0.875rem; /* 稍微縮小字體 */
+    }
+
+    /* 2. HERO SECTION */
+    
+    /* 英雄區塊的文字和填充物調整，以節省垂直空間 */
+    #hero {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+    
+    #hero h2 {
+        font-size: 2.5rem; /* 縮小主標題 */
+    }
+
+    #hero p {
+        font-size: 1rem; /* 縮小副標題 */
+    }
+
+    /* 3. SECTION CARDS */
+    
+    /* 內容卡片在手機上減少內邊距 */
+    .section-card {
+        padding: 1rem;
+        border-radius: 1rem; /* 稍微減小圓角 */
+    }
+
+    /* 確保列表項目和內聯強調整體保持清晰可讀 */
+    .section-card ul {
+        padding-left: 1rem;
+    }
+}

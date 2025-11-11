@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak Good Chinese - Gently Flow Like the Stream</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="styles.css"> 
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'garden-light': '#F8FAF5', // Very light mint/off-white background
+                        'garden-leaf': '#16A34A',  // Rich green for accents
+                        'garden-sky': '#0E7490',   // Deep cyan/blue for secondary text
+                        'garden-sun': '#F59E0B',   // Warm yellow/orange for highlights
+                        'garden-petal': '#DB2777', // Vibrant pink for quotes/poetry
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <header class="sticky top-0 z-10 bg-garden-light/95 backdrop-blur-sm shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-garden-leaf tracking-tight">
+                <a href="#hero">Speak Good Chinese</a>
+            </h1>
+            <nav class="space-x-4">
+                <a href="#chinese" class="text-garden-sky hover:text-garden-leaf transition duration-150 font-medium">Chinese</a>
+                <a href="#literary" class="text-garden-sky hover:text-garden-leaf transition duration-150 font-medium">Literary</a>
+                <a href="#math" class="text-garden-sky hover:text-garden-leaf transition duration-150 font-medium">Math</a>
+                <a href="#science" class="text-garden-sky hover:text-garden-leaf transition duration-150 font-medium">Science</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <section id="hero" class="py-20 md:py-32 text-center">
+            <h2 class="text-5xl md:text-7xl font-bold mb-6 text-gray-900 tracking-tight">
+                Embrace the Rhythm of Language
+            </h2>
+            <p class="text-xl md:text-2xl italic text-garden-sky font-light max-w-4xl mx-auto">
+                Gently flow like the stream. Every word is an expression of life.
+            </p>
+            <div class="mt-10">
+                <a href="#chinese" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-garden-leaf hover:bg-green-700 transition duration-300 shadow-lg">
+                    Start the Flow
+                </a>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 pb-20">
+
+            <section id="chinese" class="section-card">
+                <h3 class="text-3xl font-bold mb-4 text-garden-leaf border-b-2 border-garden-leaf/20 pb-2">
+                    1. The Flow of Chinese Word Order (语序)
+                </h3>
+                <p class="mb-6 text-gray-700">
+                    Unlike English, Chinese word order often prioritizes context, setting the scene before the action. This structure gives the language a characteristic rhythm that feels both efficient and poetic.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="p-4 bg-green-50 rounded-lg border-l-4 border-garden-leaf">
+                        <p class="font-semibold text-garden-leaf mb-1">Adverbial Placement</p>
+                        <p class="text-sm text-gray-700">
+                            In English, adverbs usually follow the verb ("He runs quickly"). In Chinese, the descriptive element often precedes the verb, using an adjective or phrase as an adverb, creating a subtle emphasis on the *manner* of the action:
+                            <strong class="block mt-1 text-garden-sky">
+                                快乐地 跑 (kuàilè de pǎo) — Joyfully run.
+                            </strong>
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-garden-sky">
+                        <p class="font-semibold text-garden-sky mb-1">Time and Venue First</p>
+                        <p class="text-sm text-gray-700">
+                            The temporal and locational context is usually established early in the sentence. English puts this information last; Chinese puts it right after the subject:
+                            <strong class="block mt-1 text-garden-leaf">
+                                我 昨天 在公园 见到他 (Wǒ zuótiān zài gōngyuán jiàndào tā) — I yesterday at the park saw him.
+                            </strong>
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-garden-sun">
+                        <p class="font-semibold text-garden-sun mb-1">Large to Small (Addresses & Dates)</p>
+                        <p class="text-sm text-gray-700">
+                            Information moves from the general to the specific. This applies to addresses (Country, Province, City, Street) and dates (Year, Month, Day), the opposite of the common English pattern:
+                            <strong class="block mt-1 text-garden-petal">
+                                中国, 北京市 (Zhōngguó, Běijīng Shì) — China, Beijing City.
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="literary" class="section-card">
+                <h3 class="text-3xl font-bold mb-4 text-garden-leaf border-b-2 border-garden-leaf/20 pb-2">
+                    2. Literary Expression (文学与诗歌)
+                </h3>
+                <p class="mb-6 text-gray-700">
+                    From the succinct beauty of Tang poetry to the lyrical flow of modern songs, Chinese offers profound ways to express human emotion and philosophy.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="p-4 bg-pink-50 rounded-lg border-l-4 border-garden-petal">
+                        <p class="font-semibold text-garden-petal mb-1">Tang Poem (唐诗): A Simple Gaze</p>
+                        <p class="text-sm italic text-gray-700">
+                            <strong>静夜思 (Jìng Yè Sī) - Quiet Night Thoughts by 李白 (Lǐ Bái)</strong>
+                            <span class="block mt-2 text-base font-medium">
+                                举头望明月，低头思故乡。
+                                <br/>
+                                (Jǔ tóu wàng míngyuè, dī tóu sī gùxiāng.)
+                            </span>
+                            <span class="block mt-1 text-xs text-gray-500">
+                                Lifting my head, I gaze at the bright moon; lowering my head, I yearn for my homeland.
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-garden-sky/10 rounded-lg border-l-4 border-garden-sky">
+                        <p class="font-semibold text-garden-sky mb-1">Song Ci (宋词): Philosophy in Verse</p>
+                        <p class="text-sm italic text-gray-700">
+                            <strong>水调歌头 (Shuǐ Diào Gē Tóu) - Prelude to Water Melody by 苏轼 (Sū Shì)</strong>
+                            <span class="block mt-2 text-base font-medium">
+                                但愿人长久，千里共婵娟。
+                                <br/>
+                                (Dànyuàn rén chángjiǔ, qiānlǐ gòng chánjuān.)
+                            </span>
+                            <span class="block mt-1 text-xs text-gray-500">
+                                May we all live long and share the beauty of the moon, even a thousand miles apart.
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-green-50 rounded-lg border-l-4 border-garden-leaf">
+                        <p class="font-semibold text-garden-leaf mb-1">Modern Pop Lyric (流行歌词): Worldly Love</p>
+                        <p class="text-sm italic text-gray-700">
+                            <strong>恋曲 1980 (Liànqǔ 1980) - Love Song 1980 by 罗大佑 (Luó Dàyòu)</strong>
+                            <span class="block mt-2 text-base font-medium">
+                                春风秋雨，多少海誓山盟都随风远去
+                                <br/>
+                                (Chūnfēng qiūyǔ, duōshao hǎishì shānméng dōu suí fēng yuǎn qù.)
+                            </span>
+                            <span class="block mt-1 text-xs text-gray-500">
+                                Spring breezes and autumn rains—how many solemn vows of eternal love all drifted far away with the wind.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+<section id="math" class="section-card">
+                <h3 class="text-3xl font-bold mb-4 text-garden-leaf border-b-2 border-garden-leaf/20 pb-2">
+                    3. Chinese in Mathematics (数学)
+                </h3>
+                <p class="mb-6 text-gray-700">
+                    Chinese terminology provides clear, logical structures for mathematical concepts, making the language highly efficient for expressing arithmetic operations, ratios, and numerical relationships.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-garden-sun">
+                        <p class="font-semibold text-garden-sun mb-1">Basic Operations (四则运算)</p>
+                        <p class="text-sm text-gray-700">
+                            The terms for basic arithmetic are direct and action-oriented:
+                            <ul class="list-disc list-inside mt-2 space-y-1 ml-4">
+                                <li><strong class="text-garden-leaf">Add 加 (jiā)</strong>, <strong class="text-garden-leaf">Sum 和 (hé)</strong>. Example: 2 + 3 = 5 is 二加三等于五</li>
+                                <li><strong class="text-garden-leaf">Subtract 减 (jiǎn)</strong>, <strong class="text-garden-leaf">Difference 差 (chà)</strong>.</li>
+                                <li><strong class="text-garden-leaf">Multiply 乘 (chéng)</strong>, <strong class="text-garden-leaf">Product 积 (jī)</strong>.</li>
+                                <li><strong class="text-garden-leaf">Divide 除 (chú)</strong>, <strong class="text-garden-leaf">Quotient 商 (shāng)</strong>.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-green-50 rounded-lg border-l-4 border-garden-leaf">
+                        <p class="font-semibold text-garden-leaf mb-1">Fractions, Multiples, and Decimals</p>
+                        <p class="text-sm text-gray-700">
+                            Concepts related to proportion and value are clearly defined:
+                            <ul class="list-disc list-inside mt-2 space-y-1 ml-4">
+                                <li><strong class="text-garden-sky">Fractions (分数):</strong> Use "分之" (fēn zhī, meaning "of the total (denominator), how many parts (numerator)") to denote fractions. <strong class="text-garden-sky">三分之一 (sān fēn zhī yī)</strong> means 'one third' (1/3).</li>
+                                <li><strong class="text-garden-sky">Multiples (倍数):</strong> <strong class="text-garden-sky">倍 (bèi)</strong> means 'times/fold'. <strong class="text-garden-sky">两倍 (liǎng bèi)</strong> means two times/double.</li>
+                                <li><strong class="text-garden-sky">Decimals (小数):</strong> The decimal point is <strong class="text-garden-sky">点 (diǎn, often pronounced as diěr)</strong>. <strong class="text-garden-sky">1.7 is 一点七 (yī diěr qī)</strong>.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-pink-50 rounded-lg border-l-4 border-garden-petal">
+                        <p class="font-semibold text-garden-petal mb-1">Units and Measure Words</p>
+                        <p class="text-sm text-gray-700">
+                            Chinese uses classifiers (<strong class="text-garden-sky">量词 - Measure Words</strong>) extensively, which enforces categorization and unit awareness. Even in math, this habit helps maintain clarity about the type of quantity being measured.
+                            <strong class="block mt-1 text-garden-sun">
+                                五粒苹果 (wǔ lì píngguǒ) — Five (general measure word) apples.
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="science" class="section-card">
+                <h3 class="text-3xl font-bold mb-4 text-garden-leaf border-b-2 border-garden-leaf/20 pb-2">
+                    4. Chinese in Science & Technology (科技)
+                </h3>
+                <p class="mb-6 text-gray-700">
+                    Scientific terminology in Chinese relies on descriptive characters, but their modern meaning is based on <strong>international scientific definitions</strong>, not just the literal combination of characters.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-garden-sky">
+                        <p class="font-semibold text-garden-sky mb-1">Nature and Physical Phenomena (物理与化学)</p>
+                        <p class="text-sm text-gray-700">
+                            Many terms are compound words that are self-explanatory, but the depth of meaning requires understanding the modern scientific context:
+                            <ul class="list-disc list-inside mt-2 space-y-1 ml-4">
+                                <li><strong class="text-garden-leaf">自然 (zìrán)</strong>: "Self-so" — meaning <strong>Nature</strong>. (Must include all aspects studied by science, not just trees/animals.)</li>
+                                <li><strong class="text-garden-leaf">物理 (wùlǐ)</strong>: "Matter-principle" — meaning <strong>Physics</strong>. (The 'principle' refers to the established laws of nature.)</li>
+                                <li><strong class="text-garden-leaf">化学 (huàxué)</strong>: "Change-study" — meaning <strong>Chemistry</strong>. (The 'change' refers specifically to chemical reactions.)</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-garden-sun">
+                        <p class="font-semibold text-garden-sun mb-1">Common IT Terms (电脑与通信)</p>
+                        <p class="text-sm text-gray-700">
+                            Technology terms are highly descriptive, yet they are direct mappings of established English concepts:
+                            <ul class="list-disc list-inside mt-2 space-y-1 ml-4">
+                                <li><strong class="text-garden-petal">电脑 (diànnǎo)</strong>: "Electric-brain" — meaning <strong>Computer</strong>. (It maps directly to the functional definition of a computer.)</li>
+                                <li><strong class="text-garden-petal">手机 (shǒujī)</strong>: "Hand-machine" — meaning <strong>Mobile Phone</strong>.</li>
+                                <li><strong class="text-garden-petal">软件 (ruǎnjiàn)</strong>: "Soft-ware" — meaning <strong>Software</strong>. (A direct translation of the English concept, not just "soft stuff.")</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-garden-sky/5 text-gray-600 py-8 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Speak Good Chinese</p>
+            <p class="text-sm mt-1"></p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-to-top p-3 bg-garden-leaf text-white rounded-full shadow-lg hover:bg-green-700 transition duration-300" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>
